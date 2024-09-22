@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="div">
+
+    <div> <h1>Word Calculator</h1> </div>
+
+    <div>
+
+    <label for="area" class="field">Enter your characters</label>
+    <textarea name="words" class="font" id="area"></textarea>
+
+    </div>
+
+    <button class="button" onclick="convert()">Convert</button>
+
+    <div id="result"></div>
+
+</div>
+
+    <script>
+        function convert(){
+        let textarea = document.getElementById("area").value;
+        let count = textarea.split(' ');
+        let length = count.length;
+        let result = document.getElementById("result");
+        result.innerHTML = "words count " + length;
+        }
+    </script>
+    
+</body>
+</html>

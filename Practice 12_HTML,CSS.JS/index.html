@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Bill Calculator</title>
+</head>
+<body>
+    
+    <div>
+
+        <h1>EB Bill Calculator</h1>
+
+    <div>
+        <label for="units" class="text">Enter your units</label>
+        <input type="text" class="text" id="units">
+        <button type="submit" class="text" id="button" onclick="convert()">Calculate</button>
+    </div>
+
+    <div id="result"></div>
+
+    </div>
+
+    <script>
+        function convert(){
+            let unit = document.getElementById("units").value;
+            let result = document.getElementById("result");
+
+        if(units>=1 && units<=100)
+        {
+            result.innerHTML = (unit*3);
+        }
+        else if(units>=101 && unit<=200)
+        {
+            result.innerHTML = (unit*3) + (unit-100) + (unit*5);
+        }
+        else if(units>=201 && unit<=300)
+        {
+            result.innerHTML =  (unit*3) + (unit*5) + (unit-200) + (unit*7);
+        }
+        else if(units>=301 && unit<=500)
+        {
+            result.innerHTMl = (unit*3) + (unit*5) + (unit*7) + (unit-300) + (unit*9);
+        }
+        else
+        {
+            result.innerHTML = (unit*3) + (unit*5) + (unit*7) + (unit*9) + (unit-400) + (unit*15);
+        }
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body{
+    background:#251762;
+}
+
+.ol{
+    text-align: center;
+}
+
+.header{
+    display:inline; 
+    padding:15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    position:relative;
+    top:-55px;
+    left:-30px;
+}
+
+#login{
+    background: none;
+    border:2px solid white;
+    color:white;
+    width:90px;
+    height:50px;
+    padding:10px 0px 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:relative;
+    left:120px;
+    top:-53px;
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+
+#talktous{
+    background: none;
+    border:2px solid white;
+    color:white;
+    width:120px;
+    height:50px;
+    padding:10px 0px 10px 0px;
+    position:relative;
+    left:130px;
+    top:-53px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo{
+    width:120px;
+    height:60px;
+    border-radius: 40px;
+    position: relative;
+    top:20px;
+    left:60px;
+}
+
+.para{
+    color:white;
+    font-size: 52px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.div2{
+    position:relative;
+    left:60px;
+    top:-40px;
+}
+
+.para2{
+    color:white;
+    font-size: 18px;
+    line-height: 1.4;
+    /* letter-spacing: 4px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:normal;
+    position:relative;
+    top:-30px;
+}
+
+.discover{
+    width:220px;
+    height:50px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding:10px 20px 10px 20px;
+    background:orange;
+    color:white;
+    border:none;
+}
+
+.discover:hover{
+    border:2px solid white;
+    background: none;
+}
+
+.traackr{
+    position:relative;
+    left:730px;
+    top:-360px;
+    width:480px;
+    height:330px;
+    border-radius: 20px;
+}
+
+.header:hover{
+    color:orange;
+}
+
+#login:hover{
+    background: orange;
+    color:white;
+    border:none;
+}
+
+#talktous:hover{
+    background: orange;
+    color:white;
+    border:none;
+}

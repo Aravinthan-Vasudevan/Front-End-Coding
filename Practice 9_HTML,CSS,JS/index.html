@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="div">
+
+        <h1>Kilometer to Meter</h1>
+
+        <label for="field" class="number">Enter the value</label>
+        <input type="text" class="number" id="field">
+
+        <div><button type="submit" class="button" id="submit" onclick="convert()">Convert</button></div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+
+        function convert()
+        {
+            const km = Number(document.getElementById("field").value);
+            const m = km*1000;
+            const result = document.getElementById("result");
+            result.innerHTML = m + " Meters";
+        }
+
+    </script>
+    
+</body>
+</html>

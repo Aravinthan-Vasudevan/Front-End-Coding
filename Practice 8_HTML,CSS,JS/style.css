@@ -1,0 +1,57 @@
+.div{
+    text-align: center;
+    background:lightblue;
+    width:400px;
+    height:280px;
+    padding:20px;
+    border-radius: 20px;
+    position:relative;
+    left:30%;
+    bottom:-110px;
+}
+
+h1{
+    color:darkblue;
+}
+
+.cm{
+    display:block;
+    color:darkblue;
+    font-weight: bold;
+}
+
+#height{
+    color:darkblue;
+    font-weight: bold;
+    width:50px;
+    height:30px;
+    padding:4px;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    position:relative;
+    left:41%;
+    margin:5px;
+}
+
+.submit{
+    width:80px;
+    height:40px;
+    color:white;
+    background: darkblue;
+    border:none;
+    border-radius: 20px;
+    position:relative;
+    top:10px;
+}
+
+#result{
+    text-align: center;
+    position:relative;
+    top:20px;
+    color:darkblue;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px;
+    
+}

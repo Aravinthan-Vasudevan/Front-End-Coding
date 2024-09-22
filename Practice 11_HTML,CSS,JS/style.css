@@ -1,0 +1,47 @@
+.header{
+    background:burlywood;
+    width:500px;
+    height:200px;
+    border-radius: 20px;
+    padding:10px;
+    margin:150px auto;
+}
+
+h1{
+    text-align: center;
+    color:darkblue;
+}
+
+.button{
+    width:70px;
+    height:30px;
+    border:none;
+    border-radius: 20px;
+    background: darkblue;
+    color:white;
+    position:relative;
+    left:20px;
+}
+
+.words{
+    border-radius: 20px;
+    border:none;
+    padding:5px;
+    color:darkblue;
+    font-weight: bold;
+}
+
+.div{
+    position:relative;
+    left:50px;
+    top:10px;
+}
+
+#result{
+    position:relative;
+    left:120px;
+    top:30px;
+    font-size: 18px;
+    color:darkblue;
+    font-weight: bolder;
+}

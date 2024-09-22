@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div>
+
+        <div><h1>Basic Calculator</h1></div>
+
+        <div>
+            <label for="values" class="op">Enter the Values</label>
+            <input type="text" id="values" class="op">
+            <button type="button" id="button" class="op" onclick="convert()">Calculate</button>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+
+    function convert(){
+
+     let field = document.getElementById("values").value;
+     let result;
+     
+     if(field.include("+"))
+     {
+        let values = field.split("+");
+        let num1 = parseFloat(values[0]);
+        let num2 = [arseFloat(values[1])];
+        result.innerHTML = (num1, num2, "+");
+     }
+
+     else if(field.include("-"))
+     {
+        let values = field.split("-");
+        let num1 = parseFloat(values[0]);
+        let num2 = parseFloat(values[1]);
+        result.innerHTML = (num1, num2, "-");
+     }
+
+     else if(field.include("*"))
+     {
+        let values = field.split("*");
+        let num1 = parseFloat(values[0]);
+        let num2 = parseFloat(values[1]);
+        result.innerHTML = (num1, num2, "*");
+     }
+
+     else if(field.include("/"))
+     {
+        let values = field.split("/");
+        let num1 = parseFloat(values[0]);
+        let num2 = parseFloat(values[1]);
+        result.innerHTML = (num1, num2, "/");
+     }
+
+     else
+     {
+        result.innerHTML = "Invalid Expression";
+     }
+
+    }
+
+    
+
+    </script>
+    
+</body>
+</html>

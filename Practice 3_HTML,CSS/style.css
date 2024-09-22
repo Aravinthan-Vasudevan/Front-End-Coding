@@ -1,0 +1,93 @@
+body{
+    background: #000;
+}
+
+h2{
+    text-align:center;
+    color:orchid;
+}
+
+.div{
+    background:white;
+    background: #783c5ebd ;
+    width:500px;
+    margin-left: 375px;
+    margin-top: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label{
+    display:block;
+}
+
+.form{
+    padding:20px;
+    margin-top: 150px;
+}
+
+.username{
+    margin-left: 125px;
+    padding:5px;
+    width:200px;
+    color:orchid;
+}
+
+.password{
+    margin-left: 125px;
+    padding:5px;
+    width:200px;
+    color:orchid;
+}
+
+#name{
+    border:2px solid orchid;
+    border-radius: 20px;
+}
+
+#pass{
+    border:2px solid orchid;
+    border-radius: 20px;
+}
+
+.login{
+    margin-left: 180px;
+    margin-top: 15px;
+    padding:10px;
+    width:100px;
+    color:white;
+    background: orchid;
+    border:none;
+    border-radius: 10px;
+}
+
+.google{
+    margin-left: 130px;
+    margin-top: 25px;
+    padding:10px;
+    width:80px;
+    color:white;
+    background: red;
+    border-radius: 10px;
+    border:none;
+}
+
+.facebook{
+    padding:10px;
+    width:80px;
+    margin-left: 35px;
+    color:white;
+    background: blue;
+    border:none;
+    border-radius: 10px;
+}
+
+.img{
+    width:90px;
+    height:50px;
+    border-radius: 20px;
+    margin:auto;
+    display:block;
+}

@@ -1,0 +1,92 @@
+body{
+    background: #121480;
+}
+
+.front{
+    color:white;
+    font-size: 60px;
+    margin-left: 80px;
+    margin-top:20px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    line-height: 85px;
+}
+
+.primary{
+    color:orange;
+}
+
+.button{
+    background:white;
+    color:#121480;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing:2px;
+    width:180px;
+    height:50px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
+.img2{
+    margin-left:80px;
+    margin-top: 20px;
+    width:70px;
+    height:70px;
+    border-radius: 0px 20px 0px 20px;
+  
+}
+
+.li{
+    display:inline;
+    color:white;
+    padding:20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ol{
+    margin-left:500px;
+    margin-top: -70px;
+}
+
+.img{
+    width:500px;
+    height:300px;
+    margin-top:-450px;
+    margin-bottom: 30px;
+    margin-left: 690px;
+    border-radius: 20px;
+}
+
+#register{
+    padding:13px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: medium;
+    margin:10px;
+    color:white;
+    background: orange;
+}
+
+#home:hover{
+    color:orange;
+}
+
+#projects:hover{
+    color:orange;
+}
+
+#demo:hover{
+    color:orange;
+}
+
+#session:hover{
+    color:orange;
+}
+
+.button:hover{
+    background: orange;
+    color:white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM to M Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div">
+
+        <div>
+
+            <h1>Centimeter to Meter Calculator</h1>
+            
+        </div>
+
+        <div id="container2">
+
+            <label for="height" class="cm">Centimeter</label>
+            <input type="text" class="cm" id="height" placeholder="CM">
+
+        </div>
+    
+
+        <div><button type="submit" class="submit" onclick="convert()">Submit</button></div>
+
+        <div id="result">
+            
+        </div>
+
+
+    </div>
+
+    <script>
+
+    function convert(){
+        const cmValue = Number(document.getElementById("height").value);
+        const meter = cmValue * 0.01;
+        const result = document.getElementById("result");
+        result.innerHTML = meter.toFixed(3) + " Meter";
+    }
+
+    </script>
+
+</body>
+</html>

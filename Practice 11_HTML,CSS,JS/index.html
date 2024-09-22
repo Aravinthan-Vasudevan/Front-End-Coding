@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header ">
+
+        <div><h1>Palindrome Checker</h1></div>
+
+        <div class=div>
+
+        <label for="palindrome" class="words">Enter a word</label>
+        <input type="text" class="words" id="palindrome">
+        <button type="button" onclick="convert()" class="button">check</button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+        function convert(){
+        let field = document.getElementById("palindrome").value;
+        let palindrome = field.split('').reverse().join('').toLowerCase();
+        let result = document.getElementById("result");
+
+        if(field === palindrome)
+
+        {
+            result.innerHTML = "The given word is Palindrome";
+        }
+
+        else
+
+        {
+            result.innerHTML = "The given word is not a Palindrome";
+        }
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+.div{
+    text-align: center;
+    background:rebeccapurple;
+    width:400px;
+    height:280px;
+    border-radius: 20px;
+    padding:25px;
+    position:relative;
+    left:30%;
+    bottom:-100px;
+}
+
+#field{
+    position:relative;
+    left:39%;
+    top:10px;
+    border-radius: 20px;
+    width:60px;
+    height:30px;
+    border:none;
+    padding:10px;
+    color:black;
+}
+
+.number{
+    display:block;
+    color:white;
+    font-size: 18px;
+}
+
+.button{
+    position:relative;
+    top:30px;
+    left:-2px;
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    border:none;
+    transition-duration: 1s;
+}
+
+button:hover{
+    background:burlywood;
+    color:white;
+}
+
+h1{
+    color:white;
+}
+
+#result{
+    position:relative;
+    top:40px;
+    color:white;
+    font-weight: bold;
+}

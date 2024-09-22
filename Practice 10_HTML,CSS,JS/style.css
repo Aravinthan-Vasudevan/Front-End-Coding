@@ -1,0 +1,42 @@
+.div{
+    background:rgb(55, 20, 97);
+    width:400px;
+    height:200px;
+    padding:20px;
+    border-radius: 20px;
+    margin:150px auto;
+}
+
+.field{
+    display:inline;
+    color:white;
+}
+
+.font{
+    color:black;
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+.button{
+    width:75px;
+    height:30px;
+    color:white;
+    background:coral;
+    border:none;
+    border-radius: 20px;
+    position:relative;
+    top:10px;
+}
+
+#result{
+    position:relative;
+    top:20px;
+    color:white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+}
