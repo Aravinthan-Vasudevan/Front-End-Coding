@@ -4,72 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div>
-
+        <!-- Main heading for the Basic Calculator -->
         <div><h1>Basic Calculator</h1></div>
 
         <div>
+            <!-- Label for the input field -->
             <label for="values" class="op">Enter the Values</label>
+            <!-- Input field for the user to enter values and the operator -->
             <input type="text" id="values" class="op">
+            <!-- Button to trigger the calculation when clicked -->
             <button type="button" id="button" class="op" onclick="convert()">Calculate</button>
         </div>
 
+        <!-- Div to display the calculated result -->
         <div id="result"></div>
 
     </div>
 
     <script>
+    // Function to perform the calculation based on user input
+    function convert() {
+        // Get the value from the input field
+        let field = document.getElementById("values").value;
+        let result = document.getElementById("result"); // Reference to the result display
+        
+        // Check for addition operation
+        if (field.includes("+")) {
+            let values = field.split("+"); // Split the input by the '+' sign
+            let num1 = parseFloat(values[0]); // First number
+            let num2 = parseFloat(values[1]); // Second number
+            result.innerHTML = num1 + num2; // Display the result of the addition
 
-    function convert(){
+        // Check for subtraction operation
+        } else if (field.includes("-")) {
+            let values = field.split("-"); // Split the input by the '-' sign
+            let num1 = parseFloat(values[0]); // First number
+            let num2 = parseFloat(values[1]); // Second number
+            result.innerHTML = num1 - num2; // Display the result of the subtraction
 
-     let field = document.getElementById("values").value;
-     let result;
-     
-     if(field.include("+"))
-     {
-        let values = field.split("+");
-        let num1 = parseFloat(values[0]);
-        let num2 = [arseFloat(values[1])];
-        result.innerHTML = (num1, num2, "+");
-     }
+        // Check for multiplication operation
+        } else if (field.includes("*")) {
+            let values = field.split("*"); // Split the input by the '*' sign
+            let num1 = parseFloat(values[0]); // First number
+            let num2 = parseFloat(values[1]); // Second number
+            result.innerHTML = num1 * num2; // Display the result of the multiplication
 
-     else if(field.include("-"))
-     {
-        let values = field.split("-");
-        let num1 = parseFloat(values[0]);
-        let num2 = parseFloat(values[1]);
-        result.innerHTML = (num1, num2, "-");
-     }
+        // Check for division operation
+        } else if (field.includes("/")) {
+            let values = field.split("/"); // Split the input by the '/' sign
+            let num1 = parseFloat(values[0]); // First number
+            let num2 = parseFloat(values[1]); // Second number
+            if (num2 !== 0) { // Prevent division by zero
+                result.innerHTML = num1 / num2; // Display the result of the division
+            } else {
+                result.innerHTML = "Cannot divide by zero"; // Error message for division by zero
+            }
 
-     else if(field.include("*"))
-     {
-        let values = field.split("*");
-        let num1 = parseFloat(values[0]);
-        let num2 = parseFloat(values[1]);
-        result.innerHTML = (num1, num2, "*");
-     }
-
-     else if(field.include("/"))
-     {
-        let values = field.split("/");
-        let num1 = parseFloat(values[0]);
-        let num2 = parseFloat(values[1]);
-        result.innerHTML = (num1, num2, "/");
-     }
-
-     else
-     {
-        result.innerHTML = "Invalid Expression";
-     }
-
+        // If no valid operator is found
+        } else {
+            result.innerHTML = "Invalid Expression"; // Display an error message
+        }
     }
-
-    
-
     </script>
-    
+
 </body>
 </html>

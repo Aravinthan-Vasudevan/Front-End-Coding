@@ -1,0 +1,73 @@
+/* Basic reset for margins and padding */
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container styling */
+div {
+    background: orange; /* Background for the calculator */
+    border-radius: 8px; /* Rounded corners */
+    width: 300px; /* Fixed width for the calculator */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+/* Label styling */
+.text {
+    display: block; /* Display as block to occupy full width */
+    margin-bottom: 10px; /* Space below labels */
+    font-size: 16px; /* Font size for labels */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below input field */
+}
+
+/* Button styling */
+button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 100%; /* Full width */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Result display styling */
+#result {
+    margin-top: 20px; /* Space above the result */
+    font-size: 18px; /* Font size for the result */
+    text-align: center; /* Center the result text */
+    color: #333; /* Dark text color */
+}

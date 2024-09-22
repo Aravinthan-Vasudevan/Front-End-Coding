@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EB Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div>
-
+        <!-- Main heading for the EB Bill Calculator -->
         <h1>EB Bill Calculator</h1>
 
-    <div>
-        <label for="units" class="text">Enter your units</label>
-        <input type="text" class="text" id="units">
-        <button type="submit" class="text" id="button" onclick="convert()">Calculate</button>
-    </div>
+        <div>
+            <!-- Label for the input field -->
+            <label for="units" class="text">Enter your units</label>
+            <!-- Input field for the user to enter their electricity units -->
+            <input type="text" class="text" id="units">
+            <!-- Button to trigger the bill calculation when clicked -->
+            <button type="submit" class="text" id="button" onclick="convert()">Calculate</button>
+        </div>
 
-    <div id="result"></div>
+        <!-- Div to display the calculated bill result -->
+        <div id="result"></div>
 
     </div>
 
     <script>
-        function convert(){
+        // Function to calculate the EB bill based on the number of units
+        function convert() {
+            // Get the value of units entered by the user
             let unit = document.getElementById("units").value;
             let result = document.getElementById("result");
 
-        if(units>=1 && units<=100)
-        {
-            result.innerHTML = (unit*3);
-        }
-        else if(units>=101 && unit<=200)
-        {
-            result.innerHTML = (unit*3) + (unit-100) + (unit*5);
-        }
-        else if(units>=201 && unit<=300)
-        {
-            result.innerHTML =  (unit*3) + (unit*5) + (unit-200) + (unit*7);
-        }
-        else if(units>=301 && unit<=500)
-        {
-            result.innerHTMl = (unit*3) + (unit*5) + (unit*7) + (unit-300) + (unit*9);
-        }
-        else
-        {
-            result.innerHTML = (unit*3) + (unit*5) + (unit*7) + (unit*9) + (unit-400) + (unit*15);
-        }
-
+            // Calculate the bill based on the number of units
+            if (unit >= 1 && unit <= 100) {
+                // Charge for the first 100 units
+                result.innerHTML = (unit * 3);
+            } else if (unit >= 101 && unit <= 200) {
+                // Charge for 100 units at $3 and the next 100 units at $5
+                result.innerHTML = (100 * 3) + ((unit - 100) * 5);
+            } else if (unit >= 201 && unit <= 300) {
+                // Charge for 200 units at $3 and $5, and the next 100 units at $7
+                result.innerHTML = (100 * 3) + (100 * 5) + ((unit - 200) * 7);
+            } else if (unit >= 301 && unit <= 500) {
+                // Charge for 300 units at $3, $5, and $7, and the next 200 units at $9
+                result.innerHTML = (100 * 3) + (100 * 5) + (100 * 7) + ((unit - 300) * 9);
+            } else {
+                // Charge for all previous units plus units above 500 at $15
+                result.innerHTML = (100 * 3) + (100 * 5) + (100 * 7) + (200 * 9) + ((unit - 500) * 15);
+            }
         }
     </script>
 
